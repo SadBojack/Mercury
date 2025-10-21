@@ -1,11 +1,15 @@
 export const Homepage = () => {
   return (
+    <>
+    <div className="d-flex justify-content-center p-4">
+      <img src="/public/line.jpg"  className="img-fluid rounded-2 w-100" />
+    </div>
     <div className="row">
       <div className="col">
         <div className="card bg-secondary-subtle">
           <img src="/public/vite.svg"  width="200" height="200" className="card-img-top" alt="..." />
           <div className="card-img-overlay row">
-            <h5 className="col align-self-end card-title">200yen</h5>
+            <h5 className="col align-self-end card-title bg-dark text-white" >200yen</h5>
           </div>
         </div>
         <div className="card-body">
@@ -33,5 +37,6 @@ export const Homepage = () => {
         <img src="/public/vite.svg" width="100" height="100" />
       </div>
     </div>
+    </>
   );
 };
