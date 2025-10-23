@@ -6,3 +6,19 @@
   border-left:2px solid #000;
   border-right: 2px solid #000;
 }
+
+/* 1:1 Aspect Ratio Container */
+.aspect-ratio-1-1 {
+    /* Set the desired ratio: width / height */
+    aspect-ratio: 1 / 1; 
+    /* Important for media (like images/video) */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Make the image fill the container */
+.aspect-ratio-1-1 .card-img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
