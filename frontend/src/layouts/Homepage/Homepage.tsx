@@ -3,12 +3,11 @@ import { ItemBlock } from "./components/ItemBlock";
 
 export const Homepage = () => {
   const auctionItems = [
-    new Item(1, "Product A" ,"/public/vite.svg", "200yen", ),
-    new Item(2, "Product B" ,"/public/ghost.jpg", "300yen", ),
-    new Item(3, "Product C" ,"/public/vite.svg", "150yen", ),
-    new Item(4, "Product D" ,"/public/vite.svg", "2000yen", ),
-    new Item(5, "Product E" ,"/public/vite.svg", "1500yen", ),
-
+    new Item(1, "Product A", "/vite.svg", "200yen"),
+    new Item(2, "Product B", "/ghost.jpg", "300yen"),
+    new Item(3, "Product C", "/vite.svg", "150yen"),
+    new Item(4, "Product D", "/vite.svg", "2000yen"),
+    new Item(5, "Product E", "/vite.svg", "1500yen"),
   ];
 
   return (
