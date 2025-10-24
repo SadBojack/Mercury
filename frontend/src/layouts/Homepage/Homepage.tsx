@@ -15,7 +15,7 @@ export const Homepage = () => {
       {/* Cover photo */}
       <div className="text-center py-5">
         <img
-          src="/public/line.jpg"
+          src="/line.jpg"
           className="img-fluid rounded-2 w-100"
           alt="cover"
         />

@@ -6,7 +6,7 @@ export const ItemBlock: React.FC<{
 }> = (props) => {
   return (
     <div className="col">
-      <Link to="#" className="link-underline link-underline-opacity-0">
+      <Link to={`/item/{props.item.id}`} className="link-underline link-underline-opacity-0">
         <div className="card border border-0">
           <div className="aspect-ratio-1-1 bg-body-tertiary">
             <img src={props.item.src} className="card-img" alt="..." />

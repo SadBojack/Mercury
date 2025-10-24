@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router";
 import "./App.css";
 import { Homepage } from "./layouts/Homepage/Homepage";
 import { Navbar } from "./layouts/NavbarAndFooter/Navbar";
+import { ItemPage } from "./layouts/ItemPage/ItemPage";
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Homepage />} />
+          <Route path="/item/:id" element={<ItemPage />} />
         </Routes>
       </div>
       {/* footer */}
