@@ -3,6 +3,7 @@ import "./App.css";
 import { Homepage } from "./layouts/Homepage/Homepage";
 import { Navbar } from "./layouts/NavbarAndFooter/Navbar";
 import { ItemPage } from "./layouts/ItemPage/ItemPage";
+import { Footer } from "./layouts/NavbarAndFooter/Footer";
 
 export const App = () => {
   return (
@@ -15,8 +16,7 @@ export const App = () => {
           <Route path="/item/:id" element={<ItemPage />} />
         </Routes>
       </div>
-      {/* footer */}
-      Hello
+      <Footer />
     </div>
   );
 };

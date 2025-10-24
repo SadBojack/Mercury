@@ -14,7 +14,13 @@
     /* Important for media (like images/video) */
     width: 100%;
     overflow: hidden;
-    position:relative;
+    position: relative;
+}
+
+.aspect-ratio-1-1 img {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Make the image fill the container */
@@ -22,4 +28,14 @@
    width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.navbar-search-input {
+  width: 100%; /* default mobile width */
+}
+
+@media (min-width: 992px) { /* Bootstrap lg breakpoint = 992px+ :contentReference[oaicite:2]{index=2} */
+  .navbar-search-input {
+    width: 50%;
+  }
 }

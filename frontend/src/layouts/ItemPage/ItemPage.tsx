@@ -1,6 +1,6 @@
 export const ItemPage = () => {
   return (
-    <div className="p-4">
+    <div className="py-4 container">
       <div className="my-2">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
@@ -16,15 +16,15 @@ export const ItemPage = () => {
           </ol>
         </nav>
       </div>
-      <div className="my-2 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-3">
-        <div>
+      <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-5">
+        <div className="">
           <div id="carouselExample" className="carousel slide">
-            <div className="carousel-inner">
+            <div className="carousel-inner aspect-ratio-1-1 bg-body-tertiary d-flex align-items-center">
               <div className="carousel-item active">
                 <img src="/ghost.jpg" className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="/ghost.jpg" className="d-block w-100" alt="..." />
+                <img src="/line.jpg" className="d-block w-100" alt="..." />
               </div>
               <div className="carousel-item">
                 <img src="/ghost.jpg" className="d-block w-100" alt="..." />
@@ -59,20 +59,30 @@ export const ItemPage = () => {
         <div>
           <div className="d-flex flex-column">
             <h1>ProductName</h1>
-            <h3>Product Sub</h3>
-            <h4>3000Yen</h4>
+            <h6 className="fw-light">Product Sub</h6>
+            <h3>3000Yen</h3>
           </div>
-          <div className="d-flex">
-            <button>Like</button>
-            <button>Comment</button>
-            <button>Save</button>
-            <button>通報</button>
+          <div className="d-flex gap-2 my-3">
+            <button className="btn btn-outline-dark px-3 py-2 rounded">
+              Like
+            </button>
+            <button className="btn btn-outline-dark  px-3 py-2 rounded">
+              Comment
+            </button>
+            <button className="btn btn-outline-dark  px-3 py-2 rounded ">
+              Save
+            </button>
+            <button className=" btn btn-outline-dark px-3 py-2 rounded">
+              通報
+            </button>
           </div>
-          <div className="">
-            <button className="w-100">購入手続きへ</button>
+          <div className="mb-5">
+            <button className="w-100 btn btn-danger py-2 rounded">
+              購入手続きへ
+            </button>
           </div>
-          <div className="d-flex flex-column">
-            <h3>商品の説明</h3>
+          <div className="d-flex flex-column mb-3">
+            <h4 className="fw-light">商品の説明</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               sed dui commodo, efficitur ex ut, laoreet diam. Duis elit dolor,
@@ -88,7 +98,7 @@ export const ItemPage = () => {
           </div>
 
           <div className="d-flex flex-column">
-            <h3>商品の情報</h3>
+            <h4 className="fw-light">商品の情報</h4>
             <div className="row row-cols-2">
               <div>
                 spendisse aliquam orci sit amet fermentum egestas. Sed vulputate
