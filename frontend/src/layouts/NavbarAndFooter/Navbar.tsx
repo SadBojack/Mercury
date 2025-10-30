@@ -1,3 +1,5 @@
+import { LoginButton } from "../../auth/LoginButton";
+
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-settings p-3">
@@ -33,9 +35,7 @@ export const Navbar = () => {
           </form>
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item px-2">
-              <a className="nav-link" aria-current="page" href="#">
-                ログイン
-              </a>
+              <LoginButton />
             </li>
             <li className="nav-item mx-2">
               <a className="nav-link" href="#">
