@@ -1,6 +1,11 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import { LoginButton } from "../../auth/LoginButton";
+import { SignupButton } from "../../auth/SignupButton";
+import { LogoutButton } from "../../auth/LogoutButton";
 
 export const Navbar = () => {
+  const { isAuthenticated } = useAuth0();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-settings p-3">
       <div className="container-fluid mx-2">
@@ -34,9 +39,12 @@ export const Navbar = () => {
             </button>
           </form>
           <ul className="navbar-nav mb-2 mb-lg-0">
-            <li className="nav-item px-2">
-              <LoginButton />
-            </li>
+            {!isAuthenticated && (
+              <li className="nav-item px-2">
+                <LoginButton />
+              </li>
+            )}
+
             <li className="nav-item mx-2">
               <a className="nav-link" href="#">
                 登録
@@ -56,11 +64,16 @@ export const Navbar = () => {
                 </svg>
               </a>
             </li>
-            <li className="nav-item ms-2">
-              <button className="btn btn-danger" aria-disabled="true">
-                Disabled
-              </button>
-            </li>
+            {!isAuthenticated && (
+              <li className="nav-item ms-2">
+                <SignupButton />
+              </li>
+            )}
+            {isAuthenticated && (
+              <li className="nav-item ms-2">
+                <LogoutButton />
+              </li>
+            )}
           </ul>
         </div>
       </div>

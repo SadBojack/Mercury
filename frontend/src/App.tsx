@@ -4,6 +4,7 @@ import { Homepage } from "./layouts/Homepage/Homepage";
 import { Navbar } from "./layouts/NavbarAndFooter/Navbar";
 import { ItemPage } from "./layouts/ItemPage/ItemPage";
 import { Footer } from "./layouts/NavbarAndFooter/Footer";
+import { CallbackPage } from "./auth/CallbackPage";
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Homepage />} />
           <Route path="/item/:id" element={<ItemPage />} />
+          <Route path="/callback" element={<CallbackPage />} />
         </Routes>
       </div>
       <Footer />
